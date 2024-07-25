@@ -81,9 +81,9 @@ const Trello101 = () => {
             </div>
 
             <div className="w-full ">
-                <img className={` cursor-pointer w-full ${ slider === 0 ? 'block' : ''} ${ slider === 1 ? 'hidden' : 'block'} ${ slider === 2 ? 'hidden' : 'block'} `} src="/public/img-0.png" alt="" />
-                <img className={`cursor-pointer w-full ${ slider === 1 ? 'block' : 'hidden'}`} src="/public/img-1.png" alt="" />
-                <img className={`cursor-pointer w-full ${ slider === 2 ? 'block' : 'hidden'}`} src="/public/img-2.png" alt="" />
+                <img className={` cursor-pointer w-full ${ slider === 0 ? 'block' : ''} ${ slider === 1 ? 'hidden' : 'block'} ${ slider === 2 ? 'hidden' : 'block'} `} src="/img-0.png" alt="" />
+                <img className={`cursor-pointer w-full ${ slider === 1 ? 'block' : 'hidden'}`} src="/img-1.png" alt="" />
+                <img className={`cursor-pointer w-full ${ slider === 2 ? 'block' : 'hidden'}`} src="/img-2.png" alt="" />
               
             </div>
           </div>
