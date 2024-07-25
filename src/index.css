@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  /* border:1px solid blue; */
+}
+.active{
+  border-bottom: 2px solid #0a80ee;
+  
+}
+header{
+    width: 100%;
+}
+body{
+
+}
