@@ -45,7 +45,7 @@ const RegisterPage = () => {
     <div className="h-screen flex items-center justify-center w-full text-black">
       <div className="shadow-lg rounded-xl w-full tablet:w-2/3 laptop:w-1/3 mx-9">
         <form onSubmit={onRegister} className="flex flex-col gap-4 p-3 w-full h-[600px] bg-white shadow-lg border border-[#97979752] rounded-xl">
-          <img src="logoo.png" className="object-contain w-full h-20 select-none" alt="Logo" />
+          <img src="/logoo.png" className="object-contain w-full h-20 select-none" alt="Logo" />
           <p className="text-2xl font-bold text-center">Register to continue</p>
           <input
             className="h-16 font-semibold rounded-lg text-black border placeholder:text-gray-600 px-2 outline-none text-xl"
@@ -63,7 +63,7 @@ const RegisterPage = () => {
           />
           <div className="w-full flex items-center">
             <input
-              className="py-4 font-semibold rounded-l-lg text-black border border-r-0 rounded-l-lg placeholder:text-gray-600 w-5/6 px-2 outline-none text-xl"
+              className="py-4 font-semibold text-black border border-r-0 rounded-l-lg placeholder:text-gray-600 w-5/6 px-2 outline-none text-xl"
               type={hiddenPassword ? "password" : "text"}
               placeholder="Password"
               name="password"
@@ -94,8 +94,8 @@ const RegisterPage = () => {
           </Link>
         </form>
       </div>
-      <img className="absolute hidden tablet:block tablet:w-1/3 bottom-0 left-0 -z-10 select-none" src="left.png" alt="" />
-      <img className="absolute hidden tablet:block tablet:w-1/3 bottom-0 right-0 -z-10 select-none" src="right.png" alt="" />
+      <img className="absolute hidden tablet:block tablet:w-1/3 bottom-0 left-0 -z-10 select-none" src="/left.png" alt="" />
+      <img className="absolute hidden tablet:block tablet:w-1/3 bottom-0 right-0 -z-10 select-none" src="/right.png" alt="" />
     </div>
   );
 };
