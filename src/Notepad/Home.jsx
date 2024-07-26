@@ -1,4 +1,3 @@
-// src/components/Home.js
 import React, { useContext } from 'react';
 import { StarsContext } from '../context/StarsContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -13,7 +12,7 @@ const Home = () => {
   };
 
   return (
-    <div className='flex gap-20'>
+    <div className='flex justify-center  gap-20'>
       <div className='border-b border-b-black laptop:w-1/2 w-full tablet:w-3/4 flex flex-col gap-3 justify-center items-center rounded-lg'>
         <div className='w-full h-[130px] flex justify-center bg-[#38291e]'>
           <img className='h-full' src="https://trello.com/assets/e55b3540e5c1f06a51d7.svg" alt="" />
