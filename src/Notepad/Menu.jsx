@@ -8,13 +8,6 @@ const Menu = () => {
   const [isHovered, setIsHovered] = useState(null);
   const [isRendered, setIsRendered] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
-  const [clicks, setClicks] = useState(null);
-
-  
-  const getClick = (index) => {
-    const updatedClick = clicks.map((click, i) => (i === index ? !click : click));
-    setClicks(updatedClick);
-  };
 
   useEffect(() => {
     if (space) {
@@ -33,9 +26,9 @@ const Menu = () => {
   return (
     <div className='text-[#9fadbc] w-full tablet:w-[35%]'>
       <div className='flex flex-col border-b border-b-[#44484b95] select-none pb-3'>
-        <Link onClick={() => getClick(0)} className={` ${clicks === 0 ? 'bg-[#1919b159]' : 'bg-transparent'} w-full h-12 hover:bg-[#a0a0a03d] flex items-center rounded-lg px-3`} to={'/boards'}>Доски</Link>
-        <Link onClick={() => getClick(1)} className={` ${clicks === 1 ? 'bg-[#1919b159]' : 'bg-transparent'} w-full h-12 hover:bg-[#a0a0a03d] flex items-center rounded-lg px-3`} to={'/templatest'}>Шаблоны</Link>
-        <Link onClick={() => getClick(2)} className={` ${clicks === 2 ? 'bg-[#1919b159]' : 'bg-transparent'} w-full h-12 hover:bg-[#a0a0a03d] flex items-center rounded-lg px-3`} to={'/'}>Главная страница</Link>
+        <Link className={`   w-full h-12 hover:bg-[#a0a0a03d] flex items-center rounded-lg px-3`} to={'/boards'}>Доски</Link>
+        <Link className={`   w-full h-12 hover:bg-[#a0a0a03d] flex items-center rounded-lg px-3`} to={'/templatest'}>Шаблоны</Link>
+        <Link className={`   w-full h-12 hover:bg-[#a0a0a03d] flex items-center rounded-lg px-3`} to={'/'}>Главная страница</Link>
       </div>
       <p className='select-none text-sm pt-5'>Рабочие пространства</p>
       <div onClick={() => setSpace(!space)} className='flex text-[#9fadbc] hover:bg-[#a0a0a03d] h-10 mt-3 cursor-pointer rounded-lg gap-3 items-center'>
