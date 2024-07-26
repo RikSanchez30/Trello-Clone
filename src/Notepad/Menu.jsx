@@ -41,10 +41,10 @@ const Menu = () => {
 
   return (
     <div className="text-[#9fadbc] w-full tablet:w-[35%]">
-      <div className="flex flex-col border-b border-b-[#44484b95] select-none pb-3">
-        <Link to="/boards">Доски</Link>
-        <Link to="/templatest">Шаблоны</Link>
-        <Link to="/">Главная страница</Link>
+      <div className="flex flex-col w-full border-b border-b-[#44484b95] select-none pb-3">
+        <Link className=' hover:bg-[#a0a0a03d] flex items-center rounded-lg py-2 px-3' to="/boards">Доски</Link>
+        <Link className=' hover:bg-[#a0a0a03d] flex items-center rounded-lg py-2 px-3' to="/templatest">Шаблоны</Link>
+        <Link className=' hover:bg-[#a0a0a03d] flex items-center rounded-lg py-2 px-3' to="/">Главная страница</Link>
       </div>
       <p className="select-none text-sm pt-5">Рабочие пространства</p>
       <div
