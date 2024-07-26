@@ -3,11 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-const MenuLink = ({ to, children }) => (
-  <Link className="w-full h-12 hover:bg-[#a0a0a03d] flex items-center rounded-lg px-3" to={to}>
-    {children}
-  </Link>
-);
+
 
 const MenuItem = ({ children, isHovered, setIsHovered, index }) => (
   <p
@@ -46,9 +42,9 @@ const Menu = () => {
   return (
     <div className="text-[#9fadbc] w-full tablet:w-[35%]">
       <div className="flex flex-col border-b border-b-[#44484b95] select-none pb-3">
-        <MenuLink to="/boards">Доски</MenuLink>
-        <MenuLink to="/templatest">Шаблоны</MenuLink>
-        <MenuLink to="/">Главная страница</MenuLink>
+        <Link to="/boards">Доски</Link>
+        <Link to="/templatest">Шаблоны</Link>
+        <Link to="/">Главная страница</Link>
       </div>
       <p className="select-none text-sm pt-5">Рабочие пространства</p>
       <div
@@ -70,7 +66,7 @@ const Menu = () => {
       <div
         className={`mt-6 transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'} ${isRendered ? 'block' : 'hidden'} relative`}
       >
-        <MenuLink to="/boards">Доски</MenuLink>
+        <Link to="/boards">Доски</Link>
         <p className="w-full h-12 hover:bg-[#a0a0a03d] flex items-center rounded-lg px-3">Важные события</p>
         <MenuItem isHovered={isHovered} setIsHovered={setIsHovered} index={0}>
           Представления
